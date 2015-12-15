@@ -23,7 +23,7 @@ def territory(color)
 	USED_MAPS.each do |map|
 		mapFile = ChunkyPNG::Image.from_file("#{map.to_s}.png")
 		if map == :political
-			territoryTable.political = []
+			territoryTable[:political] = []
 			MAP_COORDS.x.times do |currentX|
 				MAP_COORDS.y.times do |currentY|
 					if color == mapFile[currentX, currentY]
@@ -38,3 +38,5 @@ def territory(color)
 	end
 	return territoryTable
 end
+
+puts territory(ChunkyPNG::Color.rgb(255,0,0))
