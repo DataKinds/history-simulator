@@ -1,7 +1,10 @@
 require "chunky_png"
 require "FileUtils"
 
-die = ->(error){puts error; Kernel.exit -1}
+def die(error)
+	puts error
+	Kernel.exit -1
+end
 
 USED_MAPS = [:political, :population, :military]
 MAP_COORDS = {x: 180, y: 90}
@@ -10,8 +13,8 @@ MAP_COORDS = {x: 180, y: 90}
 def territory(color)
 	#check to see all the files are here
 	USED_MAPS.each do |map| 
-		if !File.exist? map.to_s 
-			die["couldn't find #{map.to_s}"]
+		if !File.exist? "#{map.to_s}.png"
+			die "couldn't find #{map.to_s}.png, exiting" 
 		end
 	end
 
