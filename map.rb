@@ -40,7 +40,7 @@ def territory(color)
 			territoryTable[:political].each do |currentArea|
 				territoryTable[:population].push(
 					ChunkyPNG::Color.r(
-						mapFile[currentArea[:x], currentArea[:y]]
+						mapFile[currentArea[:x], currentArea[:y]] #TODO: add coords
 					)
 				)
 			end
