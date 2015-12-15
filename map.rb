@@ -21,22 +21,23 @@ def territory(color)
 	#if all the files are there start parsing the maps
 	territoryTable = {}
 	USED_MAPS.each do |map|
+		territoryTable[map] = []
 		mapFile = ChunkyPNG::Image.from_file("#{map.to_s}.png")
+		#parse the political map
 		if map == :political
-			territoryTable[:political] = []
-			MAP_COORDS.x.times do |currentX|
-				MAP_COORDS.y.times do |currentY|
+			MAP_COORDS[:x].times do |currentX|
+				MAP_COORDS[:y].times do |currentY|
 					if color == mapFile[currentX, currentY]
-						territoryTable.political.push({x: currentX, y: currentY})
+						territoryTable[:political].push({x: currentX, y: currentY})
 					end
 				end
 			end
+		#look at the pixels from the political map and parse the population of them
 		elsif map == :population
-
+		#look at the pixels from the political map and parse the military prescence of them
 		elsif map == :military
 		end
 	end
 	return territoryTable
 end
 
-puts territory(ChunkyPNG::Color.rgb(255,0,0))
