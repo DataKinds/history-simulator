@@ -33,7 +33,17 @@ def territory(color)
 				end
 			end
 		#look at the pixels from the political map and parse the population of them
+		#unlike the political map (which is full color), the other maps are grayscale, as
+		#they only need to be values for each spot. for example, color #000000 is a desolate 
+		#area and #FFFFFF is a packed urban area
 		elsif map == :population
+			territoryTable[:political].each do |currentArea|
+				territoryTable[:population].push(
+					ChunkyPNG::Color.r(
+						mapFile[currentArea[:x], currentArea[:y]]
+					)
+				)
+			end
 		#look at the pixels from the political map and parse the military prescence of them
 		elsif map == :military
 		end
@@ -41,3 +51,4 @@ def territory(color)
 	return territoryTable
 end
 
+puts territory(ChunkyPNG::Color.rgb(255,0,0))
