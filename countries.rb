@@ -1,9 +1,11 @@
-    require "country"
+require_relative "country"
 
 all_countries = []
 
-usa = Country.new("United States", [:democracy, :conservative, :capitalist, :northern_america])
-usa.name
-countries.push(usa)
-puts usa.name
-puts usa.tags
+canada = Country.new("Canada", [:democracy, :liberal, :capitalist, :northern_america, :pacifist])
+canada.orgs << :nato << :norad
+canada.gdp = 1785387
+
+usa = Country.new("United States", [:democracy, :conservative, :capitalist, :northern_america, :militaristic])
+usa.orgs << :nato << :norad
+usa.gdp = 17348075
