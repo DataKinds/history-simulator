@@ -11,41 +11,32 @@ MAP_COORDS = {x: 180, y: 90}
 
 #accepts a ChunkyPNG color which represents the color of the requested territory
 def territory(color)
-	#check to see all the files are here
-	USED_MAPS.each do |map| 
-		if !File.exist? "#{map.to_s}.png"
-			die "couldn't find #{map.to_s}.png, exiting" 
+	#check to see all the files are here and if they are load them
+	loadedMaps = {}
+	USED_MAPS.each do |mapSymbol| 
+		if !File.exist? "#{mapSymbol.to_s}.png"
+			die "couldn't find #{mapSymbol.to_s}.png, exiting" 
+		else
+			loadedMaps[mapSymbol] = ChunkyPNG::Image.from_file("#{mapSymbol.to_s}.png")
 		end
 	end
 
 	#if all the files are there start parsing the maps
-	territoryTable = {}
-	USED_MAPS.each do |map|
-		territoryTable[map] = []
-		mapFile = ChunkyPNG::Image.from_file("#{map.to_s}.png")
-		#parse the political map
-		if map == :political
-			MAP_COORDS[:x].times do |currentX|
-				MAP_COORDS[:y].times do |currentY|
-					if color == mapFile[currentX, currentY]
-						territoryTable[:political].push({x: currentX, y: currentY})
-					end
-				end
+	#first, create all the territory table things
+	territoryTable = []
+	#parse through the political map, and every time an owned area is found, get data about it
+	#from the other maps. political map is the only one in color, the rest of the maps are just
+	#greyscale (red channel) that judges how much of something is there. for example, 255 population
+	#is a dense urban area, and 0 population is desolate.
+	MAP_COORDS[:x].times do |currentX|
+		MAP_COORDS[:y].times do |currentY|
+			if color == loadedMaps[:political][currentX, currentY]
+				territoryTable.push({
+										x: currentX, y: currentY,
+										population: ChunkyPNG::Color.r(loadedMaps[:population][currentX, currentY]),
+										military: ChunkyPNG::Color.r(loadedMaps[:military][currentX, currentY])
+									})
 			end
-		#look at the pixels from the political map and parse the population of them
-		#unlike the political map (which is full color), the other maps are grayscale, as
-		#they only need to be values for each spot. for example, color #000000 is a desolate 
-		#area and #FFFFFF is a packed urban area
-		elsif map == :population
-			territoryTable[:political].each do |currentArea|
-				territoryTable[:population].push(
-					ChunkyPNG::Color.r(
-						mapFile[currentArea[:x], currentArea[:y]] #TODO: add coords
-					)
-				)
-			end
-		#look at the pixels from the political map and parse the military prescence of them
-		elsif map == :military
 		end
 	end
 	return territoryTable
