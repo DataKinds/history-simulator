@@ -1,0 +1,59 @@
+# country:
+#     name: Display name of the country
+#     tags: [Array of "markers"]
+#     orgs: [Array of organizations/alliances]
+#     color: Hex value
+#     reputation: How the country is viewed by the world
+#     gdp: Actual data, in millions of dollars
+#     population: Actual data, in thousands of people
+#     nukes: Estimated nuclear power of country
+#     happiness: Actual data, UN report * 10
+#     power: Calculated by game
+
+afghanistan:
+    name: Afghanistan
+    tags: [authoritarian, reactionary, sunni, capitalist, militarist, hot, arid, southern_asia, unstable]
+    orgs: []
+    color: ~
+    reputation: 0
+    gdp: 20444
+    population: 26023
+    nukes: 0
+    happiness: 0.35
+    power: ~
+
+albania:
+    name: Albania
+    tags: [hybrid, conservative, sunni, capitalist, pacifist, southern_europe]
+    orgs: []
+    color: ~
+    reputation: 0
+    gdp: 20444
+    population: 26023
+    nukes: 0
+    happiness: 0.5
+    power: ~
+
+algeria:
+    name: Algeria
+    tags: [authoritarian, conservative, sunni, capitalist, peaceful, hot, dry, northern_africa]
+    orgs: [au, arab_league]
+    color: ~
+    reputation: 0
+    gdp: 213518
+    population: 35470
+    nukes: 0
+    happiness: 0.5
+    power: ~
+
+angola:
+    name: Angola
+    tags: [authoritarian, conservative, catholic, communist, jingoist, middle_africa, hot, unstable]
+    orgs: [au]
+    color: ~
+    reputation: 0
+    gdp: 213518
+    population: 35470
+    nukes: 0
+    happiness: 0.5
+    power: ~

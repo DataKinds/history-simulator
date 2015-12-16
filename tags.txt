@@ -1,0 +1,73 @@
+# Political participation
+democracy
+flawed
+hybrid
+authoritarian
+
+# Economic policy
+laissez-faire
+capitalist
+socialist
+communist
+
+# Social conditions
+radical
+liberal
+conservative
+reactionary
+
+# Foreign policy
+pacifist
+peaceful
+militarist
+jingoist
+
+# Climate
+hot
+cold
+humid
+arid
+
+# Religion
+atheist
+catholic
+protestant
+orthodox
+sunni
+shia
+jewish
+ibadi
+hindu
+buddist
+shinto
+folk
+
+# Regions
+northern_america
+central_america
+south_america
+caribbean
+northern_europe
+western_europe
+southern_europe
+eastern_europe
+western_asia
+central_asia
+eastern_asia
+southern_asia
+southeastern_asia
+northern_africa
+western_africa
+middle_africa
+eastern_africa
+southern_africa
+australia_nz
+micronesia
+polynesia
+melanesia
+
+
+# Statuses
+unstable
+golden_age
+disease_outbreak
