@@ -42,4 +42,4 @@ def territory(color)
 	return territoryTable
 end
 
-puts territory(ChunkyPNG::Color.rgb(255,0,0))
+#puts territory(ChunkyPNG::Color.rgb(255,0,0))
