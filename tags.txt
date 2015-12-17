@@ -1,8 +1,8 @@
 # Political participation
-democracy
-flawed
-hybrid
-authoritarian
+democracy # Full democracy
+flawed # Flawed democracy
+hybrid # Hybrid regime
+authoritarian # Authoritarian regime
 
 # Economic policy
 laissez-faire
@@ -42,7 +42,7 @@ buddist
 shinto
 folk
 
-# Regions
+# Regions, based on UN geoscheme
 northern_america
 central_america
 south_america
@@ -61,10 +61,8 @@ western_africa
 middle_africa
 eastern_africa
 southern_africa
-australia_nz
-micronesia
-polynesia
-melanesia
+australasia # UN's Australia and New Zealand
+pacific_islands # UN's Polynesia, Melanesia, and Micronesia
 
 
 # Statuses

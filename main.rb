@@ -1,2 +1,3 @@
-require "yaml"
-$countries = YAML.load_file("countries.yml")
+require_relative "state"
+
+puts $countries.to_yaml

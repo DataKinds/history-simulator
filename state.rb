@@ -1,6 +1,6 @@
 require "yaml"
 
-YAML.load_file("countries.yml")
+$countries = YAML.load_file("countries.yml")
 
 #loads all the maps and country files and etc.
 #returns a hash object containing everything

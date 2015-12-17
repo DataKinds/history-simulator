@@ -1,21 +1,10 @@
-# country:
-#     name: Display name of the country
-#     tags: [Array of "markers"]
-#     orgs: [Array of organizations/alliances]
-#     color: Hex value
-#     reputation: How the country is viewed by the world
-#     gdp: Actual data, in millions of dollars
-#     population: Actual data, in thousands of people
-#     nukes: Estimated nuclear power of country
-#     happiness: Actual data, UN report * 10
-#     power: Calculated by game
-
 afghanistan:
     name: Afghanistan
-    tags: [authoritarian, reactionary, sunni, capitalist, militarist, hot, arid, southern_asia, unstable]
-    orgs: []
-    color: ~
-    reputation: 0
+    tags: [authoritarian, reactionary, sunni, capitalist, jingoist, hot, arid, unstable]
+    groups: []
+    regions: southern_asia
+    color: "16f077"
+    reputation: -10
     gdp: 20444
     population: 26023
     nukes: 0
@@ -24,9 +13,10 @@ afghanistan:
 
 albania:
     name: Albania
-    tags: [hybrid, conservative, sunni, capitalist, pacifist, southern_europe]
-    orgs: []
-    color: ~
+    tags: [hybrid, conservative, sunni, capitalist, pacifist]
+    groups: []
+    regions: southern_europe
+    color: "395f24"
     reputation: 0
     gdp: 20444
     population: 26023
@@ -36,10 +26,11 @@ albania:
 
 algeria:
     name: Algeria
-    tags: [authoritarian, conservative, sunni, capitalist, peaceful, hot, dry, northern_africa]
-    orgs: [au, arab_league]
-    color: ~
-    reputation: 0
+    tags: [authoritarian, conservative, sunni, capitalist, peaceful, hot, dry]
+    groups: [au, arab_league]
+    region: northern_africa
+    color: "fae855"
+    reputation: -5
     gdp: 213518
     population: 35470
     nukes: 0
@@ -48,12 +39,104 @@ algeria:
 
 angola:
     name: Angola
-    tags: [authoritarian, conservative, catholic, communist, jingoist, middle_africa, hot, unstable]
-    orgs: [au]
-    color: ~
-    reputation: 0
-    gdp: 213518
-    population: 35470
+    tags: [authoritarian, conservative, catholic, communist, jingoist, hot, unstable]
+    groups: [au]
+    region: middle_africa
+    color: "531c50"
+    reputation: -10
+    gdp: 129326
+    population: 19080
     nukes: 0
-    happiness: 0.5
+    happiness: 0.40
+    power: ~
+
+argentina:
+    name: Argentina
+    tags: [flawed, conservative, catholic, socialist, pacifist]
+    groups: [usan]
+    region: south_america
+    color: "efbb85"
+    reputation: 0
+    gdp: 543061
+    population: 40410
+    nukes: 0
+    happiness: 0.66
+    power: ~
+
+armenia:
+    name: Armenia
+    tags: [hybrid, conservative, orthodox, capitalist, militarist, central_asia]
+    groups: [csto]
+    region: central_asia
+    color: "c9f160"
+    reputation: 0
+    gdp: 11644
+    population: 3090
+    nukes: 0
+    happiness: 0.44
+    power: ~
+
+australia:
+    name: Australia
+    tags: [democracy, liberal, protestant, capitalist, peaceful, hot, dry]
+    groups: [nato, five_eyes, commonwealth]
+    region: australasia
+    color: "c9f160"
+    reputation: 10
+    gdp: 1442722
+    population: 22270
+    nukes: 0
+    happiness: 0.73
+    power: ~
+
+austria:
+    name: Austria
+    tags: [democracy, liberal, catholic, socialist, peaceful]
+    groups: [eu]
+    region: western_europe
+    color: "fddcea"
+    reputation: 10
+    gdp: 437582
+    population: 8390
+    nukes: 0
+    happiness: 0.72
+    power: ~
+
+azerbaijan:
+    name: Azerbaijan
+    tags: [authoritarian, conservative, shia, socialist, jingoist, central_asia]
+    groups: [csto]
+    region: central_asia
+    color: "fddcea"
+    reputation: 0
+    gdp: 437582
+    population: 8390
+    nukes: 0
+    happiness: 0.56
+    power: ~
+
+canada:
+    name: Canada
+    tags: [democracy, liberal, protestant, capitalist, pacifist, cold]
+    groups: [nato, five_eyes, commonwealth]
+    region: northern_america
+    color: "c83737"
+    reputation: 20
+    gdp: 1785387
+    population: 34020
+    nukes: 0
+    happiness: 0.74
+    power: ~
+
+usa:
+    name: United States
+    tags: [democracy, conservative, protestant, capitalist, militarist, northern_america]
+    groups: [nato, five_eyes, commonwealth]
+    region: northern_america
+    color: "c83737"
+    reputation: 5
+    gdp: 17348075
+    population: 310380
+    nukes: 0
+    happiness: 0.71
     power: ~
