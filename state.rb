@@ -2,7 +2,7 @@ require "yaml"
 require "date"
 
 $countries = YAML.load_file("countries.yml")
-$organizations = nil #TODO: YAML stuff
+$organizations = YAML.load_file("organizations.yml")
 $globaltags = {}
 $date = [2016, 1, 1]
 
