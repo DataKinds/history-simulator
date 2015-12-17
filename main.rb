@@ -1,3 +1,5 @@
 require_relative "state"
 
-puts $countries.to_yaml
+while true
+    daytick()
+end
