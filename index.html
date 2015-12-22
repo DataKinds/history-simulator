@@ -19,22 +19,22 @@
 				<img class="tab" id="world" src="icons/world.png" />
 				<img class="tab" id="help" src="icons/help.png" />
 			</div>
-			<div class="detailpanel" id="news">
+			<div class="detailpanel" id="news" style="display: none;">
 				<p style="font-size: 48pt; height: 12%">Newsfeed</p>
 				<div class="details" id="news">
-					<div class="major news-entry">
+					<div class="major entry">
 						<strong class="bad">OCT 2015:</strong> War declared!
 					</div>
-					<div class="news-entry">
+					<div class="entry">
 						<strong class="neutral">NOV 2015:</strong> United States making gains in war.
 					</div>
-					<div class="news-entry">
+					<div class="entry">
 						<strong class="good">DEC 2015:</strong> Peace treaty signed!
 					</div>
 				</div>
 			</div>
 			<div class="detailpanel" id="country" style="display: none;">
-				<p style="font-size: 48pt; height: 12.5%">Countries</p>
+				<p style="font-size: 48pt; height: 12.5%">Country Info</p>
 				<div class="details" id="country">
 					<div class="entry">
 						<strong>Flag:</strong> <img class="flag" src="flags/usa.png"/>
@@ -69,6 +69,39 @@
 					</div>
 					<div class="entry">
 						<strong>Groups:</strong> [nato, five_eyes, commonwealth]
+					</div>
+				</div>
+			</div>
+ 			<div class="detailpanel" id="groups" style="display: none;">
+				<p style="font-size: 48pt; height: 12%">Organizations</p>
+				<div class="details" id="groups">
+					<div class="entry">
+						<strong>NATO:</strong> This is an organization!
+					</div>
+				</div>
+			</div>
+			<div class="detailpanel" id="world" style="display: none;">
+				<p style="font-size: 48pt; height: 12%">Global Info</p>
+				<div class="details" id="world">
+					<div class="entry">
+						<strong>War:</strong> This is a war!
+					</div>
+					<div class="entry">
+						<strong>Tags:</strong> These are tags!
+					</div>
+				</div>
+			</div>
+			<div class="detailpanel" id="help" style="display: block;">
+				<p style="font-size: 48pt; height: 12%">About</p>
+				<div class="details" id="help">
+					<div class="entry" style="font-family: 'Exo 2';">
+						Hiya! <br/><br/>
+						This is a little website called History Simulator. It was written in Ruby by Aearnus and TristanBomb because we were bored.
+						It's intended to "simulate" history from 2015 on by tracking information about countries and periodically applying events. <br/><br/>
+						We're plenty aware of a lot of inaccuracies within the simulation, and there are a number of countries not represented (usually
+						due to size - a pixel is only so big), but if you have any feedback or want to contribute, head to the
+						<a href="https://github.com/Aearnus/history-simulator/">GitHub</a> page!<br/><br> Copyright: code is
+						licensed under MIT. Special copyright surrounds use of flags. Icons from <a href="http://iconmonstr.com">iconmonstr</a>.
 					</div>
 				</div>
 			</div>
