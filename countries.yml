@@ -1,6 +1,7 @@
 afghanistan:
     name: Afghanistan
-    tags: [authoritarian, reactionary, sunni, capitalist, jingoist, hot, arid, unstable]
+    adj: Afghan
+    tags: [authoritarian, reactionary, sunni, capitalist, jingoist, dry, unstable]
     groups: []
     regions: southern_asia
     color: "16f077"
@@ -13,106 +14,155 @@ afghanistan:
 
 albania:
     name: Albania
-    tags: [hybrid, conservative, sunni, capitalist, pacifist]
+    adj: Albanian
+    tags: [hybrid, conservative, sunni, capitalist, pacifist, wet]
     groups: []
     regions: southern_europe
     color: "395f24"
     reputation: 0
     gdp: 20444
-    population: 26023
+    population: 2893
     nukes: 0
     happiness: 0.5
     power: ~
 
 algeria:
     name: Algeria
+    adj: Algerian
     tags: [authoritarian, conservative, sunni, capitalist, peaceful, hot, dry]
     groups: [au, arab_league]
     region: northern_africa
     color: "fae855"
     reputation: -5
     gdp: 213518
-    population: 35470
+    population: 39500
     nukes: 0
     happiness: 0.5
     power: ~
 
 angola:
     name: Angola
+    adj: Angolan
     tags: [authoritarian, conservative, catholic, communist, jingoist, hot, unstable]
     groups: [au]
     region: middle_africa
     color: "531c50"
     reputation: -10
     gdp: 129326
-    population: 19080
+    population: 24383
     nukes: 0
     happiness: 0.40
     power: ~
 
 argentina:
     name: Argentina
-    tags: [flawed, conservative, catholic, socialist, pacifist]
+    adj: Argentine
+    tags: [flawed, conservative, catholic, socialist, pacifist, dry]
     groups: [usan]
     region: south_america
     color: "efbb85"
     reputation: 0
     gdp: 543061
-    population: 40410
+    population: 43132
     nukes: 0
     happiness: 0.66
     power: ~
 
 armenia:
     name: Armenia
-    tags: [hybrid, conservative, orthodox, capitalist, militarist, central_asia]
+    adj: Armenian
+    tags: [hybrid, conservative, orthodox, capitalist, militarist, cold, dry]
     groups: [csto]
     region: central_asia
     color: "c9f160"
     reputation: 0
     gdp: 11644
-    population: 3090
+    population: 3004
     nukes: 0
     happiness: 0.44
     power: ~
 
 australia:
     name: Australia
+    adj: Australian
     tags: [democracy, liberal, protestant, capitalist, peaceful, hot, dry]
     groups: [nato, five_eyes, commonwealth]
     region: australasia
     color: "c9f160"
     reputation: 10
     gdp: 1442722
-    population: 22270
+    population: 24001
     nukes: 0
     happiness: 0.73
     power: ~
 
 austria:
     name: Austria
-    tags: [democracy, liberal, catholic, socialist, peaceful]
+    adj: Austrian
+    tags: [democracy, liberal, catholic, socialist, peaceful, cold]
     groups: [eu]
     region: western_europe
     racolor: "fddcea"
     reputation: 10
     gdp: 437582
-    population: 8390
+    population: 8663
     nukes: 0
     happiness: 0.72
     power: ~
 
 azerbaijan:
     name: Azerbaijan
-    tags: [authoritarian, conservative, shia, socialist, jingoist, central_asia]
+    adj: Azerbaijani
+    tags: [authoritarian, conservative, shia, socialist, jingoist, dry]
     groups: [csto]
     region: central_asia
     color: "fddcea"
     reputation: 0
     gdp: 437582
-    population: 8390
+    population: 9676
     nukes: 0
     happiness: 0.56
+    power: ~
+
+bangladesh:
+    name: Bangladeshi
+    tags: [hybrid, liberal, sunni, socialist, peaceful, hot, wet]
+    groups: []
+    region: southern_asia
+    color: "2162ef"
+    reputation: 0
+    gdp: 183824
+    population: 159578
+    nukes: 0
+    happiness: 0.47
+    power: ~
+
+belarus:
+    name: Belarus
+    adj: Byelorussian
+    tags: [authoritarian, conservative, orthodox, peaceful, cold]
+    groups: [csto]
+    region: eastern_europe
+    color: "aab75c"
+    reputation: -5
+    gdp: 76139
+    population: 9494
+    nukes: 0
+    happiness: 0.58
+    power: ~
+
+belgium:
+    name: Belgium
+    adj: Belgian
+    tags: [democracy, conservative, orthodox, peaceful, cold]
+    groups: [eu, nato]
+    region: western_europe
+    color: "7f593f"
+    reputation: 5
+    gdp: 534230
+    population: 9494
+    nukes: 0
+    happiness: 0.58
     power: ~
 
 canada:
@@ -123,7 +173,7 @@ canada:
     color: "c83737"
     reputation: 20
     gdp: 1785387
-    population: 34020
+    population: 35986
     nukes: 0
     happiness: 0.74
     power: ~
@@ -131,12 +181,12 @@ canada:
 usa:
     name: United States
     tags: [democracy, conservative, protestant, capitalist, militarist]
-    groups: [nato, five_eyes, commonwealth]
+    groups: [nato, five_eyes, us-asia]
     region: northern_america
     color: "269ad9"
     reputation: 5
     gdp: 17348075
-    population: 310380
-    nukes: 0
+    population: 322485
+    nukes: 7100
     happiness: 0.71
     power: ~

@@ -1,8 +1,8 @@
 # Political participation
-democracy # Full democracy
-flawed # Flawed democracy
-hybrid # Hybrid regime
-authoritarian # Authoritarian regime
+democracy       # Full democracy
+flawed          # Flawed democracy
+hybrid          # Hybrid regime
+authoritarian   # Authoritarian regime
 
 # Economic policy
 laissez-faire
@@ -17,16 +17,16 @@ conservative
 reactionary
 
 # Foreign policy
-pacifist
-peaceful
-militarist
-jingoist
+pacifist     # Military spending < 1%
+peaceful     # Military spending >= 1%, < 2%
+militarist   # Military spending >= 2%, < 4%
+jingoist     # Military spending > 4%
 
 # Climate
-hot
-cold
-humid
-arid
+hot     # Yearly temperature > 20°C
+cold    # Yearly temperature < 10°C
+wet     # Yearly precipitation > 1.2m
+dry     # Yearly precipitation < 0.6m
 
 # Religion
 atheist
@@ -61,7 +61,7 @@ western_africa
 middle_africa
 eastern_africa
 southern_africa
-australasia # UN's Australia and New Zealand
+australasia     # UN's Australia and New Zealand
 pacific_islands # UN's Polynesia, Melanesia, and Micronesia
 
 
