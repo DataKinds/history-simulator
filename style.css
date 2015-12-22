@@ -1,0 +1,91 @@
+* {
+    padding: 0px;
+    border-width: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    background-color: #012;
+    align-items: stretch;
+}
+
+#map {
+    width: 90%;
+}
+
+#main {
+    display: flex;
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+}
+
+#sidebar {
+    display: flex;
+    width: 25%;
+    background-color: #333;
+    flex-direction: column;
+}
+
+#date {
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+    background-color: #111;
+    height: 25%;
+    align-items: center;
+    justify-content: center;
+    line-height: 48pt;
+    font-family: "Roboto Mono"
+}
+
+#tab-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #111;
+}
+
+img.tab {
+    height: 5%;
+    padding: 10px;
+}
+
+img.tab:hover {
+    background-color: #222;
+}
+
+img#news {
+    background-color: #333;
+}
+
+div.detailpanel {
+    background-color: #333;
+    font-family: "Exo 2";
+    color: #FFF;
+    text-align: center;
+    height: 65%;
+    width: 100%;
+}
+
+div.details {
+    background-color: #111;
+    font-family: "Roboto Mono";
+    color: #FFF;
+    overflow: auto;
+    text-align: left;
+    height: 90%;
+    padding: 5px;
+    font-size: 16pt;
+}
+
+img.flag {
+    height: 48pt;
+    vertical-align: top;
+}
+
+.entry.major {color: #FFCC00;}
+strong.bad {color: #C83737;}
+strong.neutral {color: #37C837;}
+strong.good {color: #37ABC8;}

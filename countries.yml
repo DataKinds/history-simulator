@@ -94,7 +94,7 @@ austria:
     tags: [democracy, liberal, catholic, socialist, peaceful]
     groups: [eu]
     region: western_europe
-    color: "fddcea"
+    racolor: "fddcea"
     reputation: 10
     gdp: 437582
     population: 8390
@@ -130,7 +130,7 @@ canada:
 
 usa:
     name: United States
-    tags: [democracy, conservative, protestant, capitalist, militarist, northern_america]
+    tags: [democracy, conservative, protestant, capitalist, militarist]
     groups: [nato, five_eyes, commonwealth]
     region: northern_america
     color: "269ad9"

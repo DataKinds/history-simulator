@@ -1,6 +1,77 @@
 <html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link href='https://fonts.googleapis.com/css?family=Exo+2:400,700|Roboto+Mono:400,700' rel='stylesheet' type='text/css'>
+	</head>
 	<body>
-		<p id="historyDisplay"></p>
-		<button id="">Press for more history!</button>
+		<div id="main">
+			<img id="map" src="political.png" />
+		</div>
+		<div id="sidebar">
+			<div id="date">
+				<p style="font-size: 64pt;">DEC 21</p>
+				<p style="font-size: 96pt; line-height: 96pt;">2015</p>
+			</div>
+			<div id="tab-bar">
+				<img class="tab" id="news" src="icons/news.png" />
+				<img class="tab" id="country" src="icons/country.png" />
+				<img class="tab" id="groups" src="icons/groups.png" />
+				<img class="tab" id="world" src="icons/world.png" />
+				<img class="tab" id="help" src="icons/help.png" />
+			</div>
+			<div class="detailpanel" id="news">
+				<p style="font-size: 48pt; height: 12.5%">Newsfeed</p>
+				<div class="details" id="news">
+					<div class="major news-entry">
+						<strong class="bad">OCT 2015:</strong> War declared!
+					</div>
+					<div class="news-entry">
+						<strong class="neutral">NOV 2015:</strong> United States making gains in war.
+					</div>
+					<div class="news-entry">
+						<strong class="good">DEC 2015:</strong> Peace treaty signed!
+					</div>
+				</div>
+			</div>
+			<div class="detailpanel" id="country" style="display: none;">
+				<p style="font-size: 48pt; height: 12.5%">Countries</p>
+				<div class="details" id="country">
+					<div class="entry">
+						<strong>Flag:</strong> <img class="flag" src="flags/usa.png"/>
+					</div>
+					<div class="entry">
+						<strong>Name:</strong> United States
+					</div>
+					<div class="entry">
+						<strong>GDP:</strong> 17,348,075
+					</div>
+					<div class="entry">
+						<strong>Population:</strong> 310,380
+					</div>
+					<div class="entry">
+						<strong>Region:</strong> northern_america
+					</div>
+					<div class="entry">
+						<strong>Reputation:</strong> 5
+					</div>
+					<div class="entry">
+						<strong>Happiness:</strong> 71%
+					</div>
+					<br/>
+					<div class="entry">
+						<strong class="bad">Technical</strong>
+					</div>
+					<div class="entry">
+						<strong>Color:</strong> <mark style="background-color: #269ad9;">269ad9</mark>
+					</div>
+					<div class="entry">
+						<strong>Tags:</strong> [democracy, conservative, protestant, capitalist, militarist, northern_america]
+					</div>
+					<div class="entry">
+						<strong>Groups:</strong> [nato, five_eyes, commonwealth]
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
